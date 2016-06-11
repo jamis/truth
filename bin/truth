@@ -1,0 +1,8 @@
+#!/bin/sh ruby
+
+require 'truth'
+
+expr = ARGV.first or abort "please specify the expression to evaluate"
+table = Truth::Table.new(expr)
+
+table.display
