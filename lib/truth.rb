@@ -1,1 +1,1 @@
-require 'truth/table'
+require File.expand_path('../truth/table', __FILE__)
