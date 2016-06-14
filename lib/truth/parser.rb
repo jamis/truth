@@ -1,6 +1,6 @@
-require 'truth/tokenizer'
-require 'truth/node'
-require 'truth/ast'
+require File.expand_path('../tokenizer', __FILE__)
+require File.expand_path('../node', __FILE__)
+require File.expand_path('../ast', __FILE__)
 
 # expr := expr2
 #       | expr2 '||' expr

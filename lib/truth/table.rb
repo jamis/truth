@@ -1,4 +1,4 @@
-require 'truth/parser'
+require File.expand_path('../parser', __FILE__)
 
 module Truth
   class Table
