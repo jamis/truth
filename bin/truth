@@ -2,7 +2,14 @@
 
 require 'truth'
 
+use_kmap = ARGV.delete("-k")
+
 expr = ARGV.first or abort "please specify the expression to evaluate"
 table = Truth::Table.new(expr)
 
 table.display
+
+if use_kmap
+  puts
+  table.kmap.display
+end

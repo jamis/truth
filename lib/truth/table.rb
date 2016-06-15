@@ -1,4 +1,5 @@
 require 'truth/parser'
+require 'truth/kmap'
 
 module Truth
   class Table
@@ -19,6 +20,10 @@ module Truth
         { result: @ast.evaluate(mapping),
           values: mapping }
       end
+    end
+
+    def kmap
+      @_kmap ||= KMap.new(@ast)
     end
 
     def display
